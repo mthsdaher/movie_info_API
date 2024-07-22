@@ -1,0 +1,59 @@
+<!--
+Name: Matheus Veloso Daher
+E-Mail: matheusdaher@gmail.com
+Std ID: 200575625
+Course: JavaScript
+Program Information: a web application utilizing the OMDB API provided
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search with OMDB API</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+</head>
+<body>
+    <header>
+        <img src="assets/movie_info.jfif" alt="Logo" class="logo">
+    </header>
+    <main>
+        <h1>More info to a better movie!</h1>
+        <h4>Insert the name of the movie and/or the year to see more information before you watch the movie!</h4>
+        <form id="movie-form">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="t" placeholder="Insert the name of the movie"required><br><br>
+
+            <label for="year">Year:</label>
+            <input type="text" id="year" name="y" placeholder="If you know, type the year of the movie"><br><br>
+
+            <button type="button" onclick="searchMovie()">Search Movie</button>
+        </form>
+
+        <div id="results"></div>
+
+        <!-- Template for displaying movie information - important to add the class and match with the fucntion on script.js -->
+        <template id="movie-template">
+            <div class="movie">
+                <img src="" alt="movie poster" class="poster">
+                <h2 class="movie-title">Title: </h2>
+                <p class="imdb-id">IMDb ID: </p>
+                <p class="release-year">Year: </p>
+                <p class="country">Country: </p>
+                <span class="flag"></span>
+                <p class="genre">Genre: </p>
+                <p class="director">Director: </p>
+                <p class="actors">Actors: </p>
+                <p class="plot">Plot: </p>
+                <p class="awards">Awards: </p>
+                <p class="Metascore">Metascore: </p>
+                <p class="imdbRating">imdbRating: </p>
+                <p class="awardimdbVotess">awardimdbVotess: </p>
+            </div>
+        </template>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

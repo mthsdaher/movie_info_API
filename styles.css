@@ -1,0 +1,105 @@
+/* 
+Name: Matheus Veloso Daher
+E-Mail: matheusdaher@gmail.com
+Std ID: 200575625
+Course: JavaScript
+Program Information: a web application utilizing the OMDB API provided
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #0b0000;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(47, 0, 255);
+    font-size: 60px;
+}
+
+h4 {
+    text-align: center;
+    color: rgb(145, 120, 255);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+input[type="text"] {
+    width: 300px; /* Sets the width of the text input field */
+    padding: 8px; /* Adds padding inside the text input field */
+    margin: 10px 0; /* Adds margin above and below the text input field */
+    border: 1px solid #ccc; /* Adds a light gray border */
+    border-radius: 8px; /* Rounds the corners of the border */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: rgb(47, 0, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+#results {
+    margin-top: 20px;
+text-align: center;
+}
+
+.movie {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie img {
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.movie h2 {
+    margin: 10px 0;
+    color: #007BFF;
+}
+
+.movie p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.flag {
+    display: inline-block;
+    width: 32px;
+    height: 24px;
+    background-size: cover;
+    margin-left: 10px;
+}
